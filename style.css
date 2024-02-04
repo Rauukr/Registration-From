@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  font-family: sans-serif;
 }
 
 .form-signin {
@@ -23,3 +24,4 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
