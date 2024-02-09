@@ -12,7 +12,7 @@ dotenv.config();
 const Port = process.env.Port || 3000;
 const username=process.env.MONGODB_USERNAME;
 const password=process.env.MONGODB_PASSWORD;
-mongoose.connect(`mongodb+srv://${username}:${password}@cluster6.eqxhuls.mongodb.net/registrationFomrDb?retryWrites=true&w=majority`);
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster6.eqxhuls.mongodb.net/registrationFomrDb?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const registerSchema=new mongoose.Schema({
     name:String,
